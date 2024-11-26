@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('10101.png'); 
+            background-size: cover;
+            background-repeat: repeat;
+            color: #ffffff;
+        }
+        header {
+            background: rgba(85, 85, 85, 0.75);
+            color: #0a0a0a;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: rgba(104, 104, 104, 0.75); 
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px;
+            margin: 10px;
+            background: rgba(77, 77, 77, 0.75);
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(94, 94, 94, 0.75); 
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid rgba(184, 15, 29, 0.75); 
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(239, 2, 2, 0.551); 
+            color: white;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: rgb(176, 3, 3); 
+        }
+        @media (max-width: 600px) {
+            header, footer, nav {
+                padding: 15px;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hi! I'm Natan George</h1>
+    <p>Student</p>
+</header>
+
+<nav>
+    <a href="#background">Background</a>
+    <a href="#batch">Batch Year</a>
+    <a href="#resume">Resume</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <section id="background">
+        <h2>Background of Student, Hobbies, and Skills</h2>
+        <p>Student of American College of Technology, born in Addis Ababa, finished high school at KB Academy, and very talented at sports.</p>
+    </section>
+
+    <section id="batch">
+        <h2>Batch Year</h2>
+        <div class="batch-year">
+            <h3>BSC-B5</h3>
+            <p><strong>Description:</strong> Started in 2022 and currently a year 3 student.</p>
+            <p><strong>Major:</strong> COMPUTER SCIENCE</p>
+            <img src="student of act.jpg" alt="Project 1 Screenshot"> 
+        </div>
+        <div class="campus">
+            <h3>Main Campus</h3>
+            <p><strong>City:</strong> Addis Ababa</p>
+            <p><strong>Location:</strong> 4-Kilo, at back of Abreohut Library</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="https://www.example.com/resume.pdf" target="_blank">Download my Resume</a></p>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Great to work with!" - <cite>SOVIETS</cite></p>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out at: <a href="mailto:natangeorge332@gmail.com">natangeorge332@gmail.com</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Natan George. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 style="text-align: center;" ><b>Registration Form</b></h1>
+    <p style="text-align: center;" >Please fill out the form with the required information.</p>
+    <form action="/register.php" method="post">
+        <fieldset> 
+            <!-- <legend>Basic Info</legend> -->
+            <label for="fname">Enter Your First Name: </label>
+            <input type="text" id="first-name" name="fname" required>
+
+            <label for="lname">Enter Your Last Name: </label>
+            <input type="text" id="last-name" name="lname" required>
+
+            <label for="email">Enter Your Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pass">Create A New Password: </label>
+            <input type="password" id="new-password" name="pass" required pattern="[a-z0-5]{8,}">
+        </fieldset>
+
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal"></label>
+            <input type="radio" id="personal" name="account-type" value="personal-account" checked> Personal
+
+            <label for="business"></label>
+            <input type="radio" id="business" name="account-type" vaue="business-account"> Business
+
+        </fieldset>
+
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: </label>
+            <input type="file">
+
+            <label for="age">Input Your Age (Years): </label>
+            <input type="number" min="13" max="120">
+
+            <label for="referrer">How did you hear about us? 
+                <select name="social-media" id="info">
+                    <option value="">Select one</option>
+                    <option value="1">News</option>
+                    <option value="2">Youtube Channel</option>
+                    <option value="3">Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+
+            <label for="bio">Provide a bio: <textarea name="bio" id="bio" rows="3" cols="30">I like coding on the beach...</textarea></label>
+
+            <label for="terms-and-conditions"></label>
+            <input type="checkbox" id="terms-and-conditions" class="inline"> I accept the <a href="terms_and_conditions.html" target="_blank"> terms and conditions</a>.
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
