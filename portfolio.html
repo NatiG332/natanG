@@ -6,80 +6,108 @@
     <title>My Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('10101.png'); 
-            background-size: cover;
-            background-repeat: repeat;
-            color: #ffffff;
-        }
-        header {
-            background: rgba(85, 85, 85, 0.75);
-            color: #0a0a0a;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: rgba(104, 104, 104, 0.75); 
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 50px;
-            margin: 10px;
-            background: rgba(77, 77, 77, 0.75);
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(94, 94, 94, 0.75); 
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form input, form textarea {
-            margin: 10px 0;
-            padding: 10px;
-            border: 2px solid rgba(184, 15, 29, 0.75); 
-            border-radius: 5px;
-        }
-        form button {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: rgba(239, 2, 2, 0.551); 
-            color: white;
-            cursor: pointer;
-        }
-        form button:hover {
-            background: rgb(176, 3, 3); 
-        }
-        @media (max-width: 600px) {
-            header, footer, nav {
-                padding: 15px;
-            }
-            section {
-                padding: 15px;
-            }
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(image/10101.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+header {
+    background: rgba(85, 85, 85, 0.75);
+    color: #0a0a0a;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background: rgba(104, 104, 104, 0.75); 
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    text-align: center;
+    padding: 5%;
+    margin: 10px;
+    background: rgba(77, 77, 77, 0.75);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(94, 94, 94, 0.75); 
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid rgba(184, 15, 29, 0.75); 
+    border-radius: 5px;
+}
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(239, 2, 2, 0.551); 
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background: rgb(176, 3, 3); 
+}
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav a {
+        display: block; 
+        margin: 5px 0;
+    }
+    section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; 
+    }
+    section {
+        padding: 20px;
+        margin: 5px;
+    }
+    footer {
+        font-size: 0.9em; 
+    }
+}
     </style>
 </head>
 <body>
@@ -101,16 +129,18 @@
 
     <section id="background">
         <h2>Background of Student, Hobbies, and Skills</h2>
-        <p>Student of American College of Technology, born in Addis Ababa, finished high school at KB Academy, and very talented at sports.</p>
+        <p>Hello! I am currently studying at the American College of Technology,Born in Addis Ababa and having completed my high school education at KB Academy, where I am not only honing my technical skills but also excelling in sports. My passion for athletics complements my academic pursuits, allowing me to develop teamwork and leadership abilities. As I strive to gain valuable technical expertise, I am also focused on applying what I learn to real-world scenarios. This holistic approach is preparing me for a successful career in the ever-evolving tech industry, where innovation and adaptability are key. I am excited about the future and the opportunities that lie ahead!</p>
+       
     </section>
 
-    <section id="batch">
+    <section class="batch">
         <h2>Batch Year</h2>
-        <div class="batch-year">
+        <img class="batch-img" src="image/studentofact.jpg"Project 1 Screenshot" alt="" width="40%" height=" 20%">
+        <div class="batch-content">
             <h3>BSC-B5</h3>
             <p><strong>Description:</strong> Started in 2022 and currently a year 3 student.</p>
             <p><strong>Major:</strong> COMPUTER SCIENCE</p>
-            <img src="student of act.jpg" alt="Project 1 Screenshot"> 
+             
         </div>
         <div class="campus">
             <h3>Main Campus</h3>
